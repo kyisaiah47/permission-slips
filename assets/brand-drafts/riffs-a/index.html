@@ -32,6 +32,14 @@
   .card.navy{background:#14213d;color:#f3ecdc}
   .card.cream{background:#f3ecdc;color:#14213d}
   .card .label{position:absolute;left:6%;bottom:6%;font-size:13px;opacity:.6;font-family:"IBM Plex Sans"}
+  main{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+  main section{margin-bottom:0}
+  .row{grid-template-columns:220px 1fr}
+  .row .lockup{grid-column:1/-1}
+  .small{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start}
+  .lockup .t{font-size:30px}
+  .card .t{font-size:clamp(16px,1.8vw,30px)}
+  @media (max-width:1100px){main{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
