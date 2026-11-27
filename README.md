@@ -1,10 +1,9 @@
 <div align="center">
 
-<img src="assets/icon.svg" width="72" height="72" alt="">
-
-# Permission Slips
-
-*sudo for coding agents*
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" width="720" alt="Permission Slips: sudo for coding agents">
+</picture>
 
 [![Works with Claude Code · Codex](https://img.shields.io/badge/works%20with-Claude%20Code%20%C2%B7%20Codex-111111)](#quickstart)
 [![License: Compound Labs skills](https://img.shields.io/badge/license-Compound%20Labs%20skills-lightgrey)](LICENSE)
