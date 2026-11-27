@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "python3 ~/.permission-slips/slip.py issue", "timeout": 10 } ] }
+    ],
+    "PreToolUse": [
+      { "matcher": "*", "hooks": [ { "type": "command", "command": "python3 ~/.permission-slips/slip.py check", "timeout": 10 } ] }
+    ]
+  }
+}

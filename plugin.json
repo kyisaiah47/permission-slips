@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "permission-slips",
+  "version": "0.1.0",
+  "description": "Scoped, expiring grants for risky agent actions. Only a prompt you type issues one, and a hook outside the model checks it.",
+  "author": {
+    "name": "Compound Labs",
+    "url": "https://github.com/kyisaiah47"
+  },
+  "homepage": "https://github.com/kyisaiah47/permission-slips",
+  "repository": "https://github.com/kyisaiah47/permission-slips",
+  "license": "LicenseRef-Compound-Labs-Skills",
+  "keywords": [
+    "skills",
+    "codex",
+    "claude-code",
+    "hooks",
+    "permissions"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Permission Slips",
+        "shortDescription": "Grants only your prompt can issue",
+        "longDescription": "Scoped, expiring grants for risky agent actions such as deploys, migrations and package publishes. Only a prompt you type issues one, and a hook outside the model checks it before the tool call runs. Supports Codex and Claude Code. See the repository for setup, tested behavior and limitations.",
+        "developerName": "Compound Labs",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/kyisaiah47/permission-slips",
+        "supportURL": "https://github.com/kyisaiah47/permission-slips/issues",
+        "defaultPrompt": [
+          "Explain which permission slips this session holds and what they allow."
+        ],
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg",
+        "privacyPolicyURL": "https://github.com/kyisaiah47/permission-slips/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/kyisaiah47/permission-slips/blob/main/LICENSE"
+      },
+      "publication": {
+        "release_notes": "First release: slip issuer, guard, example policy and tests."
+      }
+    }
+  }
+}

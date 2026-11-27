@@ -1,0 +1,11 @@
+{
+  "description": "Permission slips for Codex. Put this in ~/.codex/hooks.json (merge with any hooks you already have).",
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "python3 ~/.permission-slips/slip.py issue", "timeout": 10, "statusMessage": "Checking for permission slips..." } ] }
+    ],
+    "PreToolUse": [
+      { "hooks": [ { "type": "command", "command": "python3 ~/.permission-slips/slip.py check", "timeout": 10, "statusMessage": "Checking permission slips..." } ] }
+    ]
+  }
+}

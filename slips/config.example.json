@@ -1,0 +1,42 @@
+{
+  "slips": {
+    "deploy":  { "lifetime": "until-spent", "needs_target": true, "aliases": ["force-deploy"] },
+    "migrate": { "lifetime": "once",        "needs_target": true },
+    "publish": { "lifetime": "once",        "needs_target": true },
+    "agents":  { "lifetime": "prompt",      "aliases": ["allow-multi-agents"] },
+    "egress":  { "lifetime": "session",     "needs_target": true }
+  },
+  "rules": [
+    {
+      "name": "production deploy",
+      "tool": "^(Bash|exec_command)$",
+      "pattern": "(?:^|[\\s;&|])(?:\\./)?scripts/deploy\\.sh\\s+(?P<target>[A-Za-z0-9_.-]+)",
+      "slip": "deploy"
+    },
+    {
+      "name": "production migration",
+      "tool": "^(Bash|exec_command)$",
+      "pattern": "\\b(?:prisma migrate deploy|supabase db push|rails db:migrate)\\b.*--env[= ](?P<target>prod\\w*)",
+      "slip": "migrate"
+    },
+    {
+      "name": "package publish",
+      "tool": "^(Bash|exec_command)$",
+      "pattern": "\\b(?:npm publish|twine upload|cargo publish)\\b",
+      "target": "registry",
+      "slip": "publish"
+    },
+    {
+      "name": "more than one subagent per prompt",
+      "tool": "^(Agent|Task)$",
+      "free_per_prompt": 1,
+      "slip": "agents"
+    },
+    {
+      "name": "outbound request",
+      "tool": "^(Bash|exec_command)$",
+      "pattern": "\\b(?:curl|wget)\\b[^|;&]*?https?://(?P<target>[A-Za-z0-9.-]+)",
+      "slip": "egress"
+    }
+  ]
+}

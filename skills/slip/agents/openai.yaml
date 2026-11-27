@@ -1,0 +1,4 @@
+interface:
+  display_name: "Permission Slips"
+  short_description: "Scoped, expiring grants that only your prompt can issue"
+  default_prompt: "Explain which permission slips this session holds and what they allow."

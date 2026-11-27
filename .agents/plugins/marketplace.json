@@ -1,0 +1,12 @@
+{
+  "name": "permission-slips-marketplace",
+  "interface": { "displayName": "Permission Slips" },
+  "plugins": [
+    {
+      "name": "permission-slips",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
