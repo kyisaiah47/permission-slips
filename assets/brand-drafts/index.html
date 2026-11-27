@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Permission Slips: brand drafts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Fraunces:opsz,wght@9..144,600&family=JetBrains+Mono:wght@500;700&family=Caveat:wght@700&family=Archivo+Black&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0}
+  body{font-family:"IBM Plex Sans",system-ui,sans-serif;background:#f4f3ef;color:#16181d;padding:48px}
+  header{margin-bottom:40px}
+  header h1{font-family:"Space Grotesk";font-size:28px}
+  header p{color:#555;margin-top:6px}
+  section{border:1px solid #d9d7d0;border-radius:18px;padding:28px;margin-bottom:36px;background:#fff}
+  section h2{font-family:"Space Grotesk";font-size:20px}
+  section .idea{color:#444;margin:6px 0 22px}
+  .row{display:grid;grid-template-columns:240px 1fr;gap:22px;align-items:stretch}
+  .mark img{width:240px;height:240px;object-fit:cover;border-radius:16px;border:1px solid #e3e1da;display:block}
+  .lockup{border-radius:16px;display:flex;align-items:center;gap:22px;padding:28px 34px}
+  .lockup img{width:120px;height:120px;border-radius:22px;object-fit:cover}
+  .lockup .t{line-height:1.05}
+  .lockup .tag{font-size:16px;margin-top:10px;opacity:.85}
+  .hero{position:relative;margin-top:22px;border-radius:16px;overflow:hidden;aspect-ratio:2/1;background:#ddd}
+  .hero img{width:100%;height:100%;object-fit:cover;display:block}
+  .hero .over{position:absolute;left:5%;top:50%;transform:translateY(-50%)}
+  #a .lockup{background:#f3ecdc;color:#14213d}
+  #a .t{font-family:"JetBrains Mono";font-weight:700;font-size:44px;letter-spacing:-.02em}
+  #a .over{color:#f3ecdc;font-family:"JetBrains Mono";font-weight:700;font-size:clamp(24px,4vw,52px)}
+  #b .lockup{background:#f6efe2;color:#2a1d14}
+  #b .t{font-family:"Archivo Black";font-size:46px;text-transform:uppercase;letter-spacing:.01em}
+  #b .t span{color:#d8432b}
+  #b .over{color:#2a1d14;font-family:"Archivo Black";text-transform:uppercase;font-size:clamp(22px,3.6vw,48px)}
+  #c .lockup{background:#121417;color:#e9f5ee}
+  #c .t{font-family:"Space Grotesk";font-weight:700;font-size:44px}
+  #c .t em{font-family:"Caveat";font-style:normal;color:#5ef2a8;font-size:56px}
+  #c .over{color:#e9f5ee;font-family:"Space Grotesk";font-weight:700;font-size:clamp(24px,4vw,52px)}
+  #c .over em{font-family:"Caveat";font-style:normal;color:#5ef2a8}
+  #d .lockup{background:#2a2c30;color:#f5f1e6}
+  #d .t{font-family:"Fraunces";font-weight:600;font-size:46px}
+  #d .t span{color:#f2b630}
+  #d .over{color:#f5f1e6;font-family:"Fraunces";font-weight:600;font-size:clamp(24px,4vw,52px)}
+  .sub{font-size:.42em;display:block;margin-top:.5em;opacity:.85;font-family:"IBM Plex Sans";font-weight:400;text-transform:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>Permission Slips: first-draft brand directions</h1>
+  <p>Four directions are available. Codex image_gen marks and themes the image. HTML sets the wordmarks. Pick one to polish.</p>
+</header>
+
+<section id="a">
+  <h2>A. The Stub</h2>
+  <p class="idea">The perforated tear-off stub is valid for one trip. It is spent after you tear it off.</p>
+  <div class="row">
+    <div class="mark"><img src="a-mark.png" alt=""></div>
+    <div class="lockup"><img src="a-mark.png" alt=""><div class="t">permission-slips<div class="tag">sudo for coding agents</div></div></div>
+  </div>
+  <div class="hero"><img src="a-theme.png" alt=""><div class="over">/slip deploy api<span class="sub">An agent can't sign its own permission slip.</span></div></div>
+</section>
+
+<section id="b">
+  <h2>B. The Stamp</h2>
+  <p class="idea">Only the human holds the approval stamp. It leaves an ink mark on one named form.</p>
+  <div class="row">
+    <div class="mark"><img src="b-mark.png" alt=""></div>
+    <div class="lockup"><img src="b-mark.png" alt=""><div class="t">Permission <span>Slips</span><div class="tag" style="font-family:'IBM Plex Sans';text-transform:none">sudo for coding agents</div></div></div>
+  </div>
+  <div class="hero"><img src="b-theme.png" alt=""><div class="over">Signed by the human.<span class="sub">The slip names the trip. It is valid for one trip. The door checks it.</span></div></div>
+</section>
+
+<section id="c">
+  <h2>C. The Signature</h2>
+  <p class="idea">The human's signature is a terminal-green pen stroke. It is the one thing the model cannot forge.</p>
+  <div class="row">
+    <div class="mark"><img src="c-mark.png" alt=""></div>
+    <div class="lockup"><img src="c-mark.png" alt=""><div class="t">Permission <em>Slips</em><div class="tag">sudo for coding agents</div></div></div>
+  </div>
+  <div class="hero"><img src="c-theme.png" alt=""><div class="over">An agent can't <em>sign</em><br>its own permission slip.</div></div>
+</section>
+
+<section id="d">
+  <h2>D. The Door Check</h2>
+  <p class="idea">The door has a slot. A hook outside the model checks the slip before the risky call goes through.</p>
+  <div class="row">
+    <div class="mark"><img src="d-mark.png" alt=""></div>
+    <div class="lockup"><img src="d-mark.png" alt=""><div class="t">Permission <span>Slips</span><div class="tag" style="font-family:'IBM Plex Sans'">sudo for coding agents</div></div></div>
+  </div>
+  <div class="hero"><img src="d-theme.png" alt=""><div class="over">Checked at the door.<span class="sub">A hook outside the model checks every slip.</span></div></div>
+</section>
+</body>
+</html>
