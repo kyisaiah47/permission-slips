@@ -4,12 +4,12 @@
   "version": "0.1.0",
   "description": "Scoped, expiring grants for risky agent actions. Only a prompt you type issues one, and a hook outside the model checks it.",
   "author": {
-    "name": "Compound Labs",
+    "name": "Isaiah Kim",
     "url": "https://github.com/kyisaiah47"
   },
   "homepage": "https://github.com/kyisaiah47/permission-slips",
   "repository": "https://github.com/kyisaiah47/permission-slips",
-  "license": "LicenseRef-Compound-Labs-Skills",
+  "license": "LicenseRef-Isaiah-Kim-Skills",
   "keywords": [
     "skills",
     "codex",
@@ -23,7 +23,7 @@
         "displayName": "Permission Slips",
         "shortDescription": "Grants only your prompt can issue",
         "longDescription": "Scoped, expiring grants for risky agent actions such as deploys, migrations and package publishes. Only a prompt you type issues one, and a hook outside the model checks it before the tool call runs. Supports Codex and Claude Code. See the repository for setup, tested behavior and limitations.",
-        "developerName": "Compound Labs",
+        "developerName": "Isaiah Kim",
         "category": "Productivity",
         "websiteURL": "https://github.com/kyisaiah47/permission-slips",
         "supportURL": "https://github.com/kyisaiah47/permission-slips/issues",

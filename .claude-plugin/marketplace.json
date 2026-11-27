@@ -1,7 +1,7 @@
 {
   "name": "permission-slips",
   "description": "Permission slips for coding agents.",
-  "owner": { "name": "Compound Labs" },
+  "owner": { "name": "Isaiah Kim" },
   "plugins": [
     { "name": "permission-slips", "source": "./", "description": "Scoped, expiring grants that only your prompt can issue.", "version": "0.1.0" }
   ]

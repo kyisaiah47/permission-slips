@@ -3,7 +3,7 @@
 <img src="assets/banner.png" width="100%" alt="Permission Slips: sudo for coding agents">
 
 [![Works with Claude Code · Codex](https://img.shields.io/badge/works%20with-Claude%20Code%20%C2%B7%20Codex-111111)](#quickstart)
-[![License: Compound Labs skills](https://img.shields.io/badge/license-Compound%20Labs%20skills-lightgrey)](LICENSE)
+[![License: source-available](https://img.shields.io/badge/license-source--available-lightgrey)](LICENSE)
 
 </div>
 
@@ -184,4 +184,4 @@ This repo draws on sudo and its timestamp, break-glass emergency access, capabil
 
 ## License
 
-Copyright 2026 Compound Labs. Released under the Compound Labs skills license: you may install, use and privately adapt it. See LICENSE. Isaiah Kim ([kyisaiah47](https://github.com/kyisaiah47)). [LICENSE](LICENSE) · [PRIVACY.md](PRIVACY.md)
+Copyright 2026 Isaiah Kim. Released under the skills license in LICENSE: you may install, use and privately adapt it. See LICENSE. Isaiah Kim ([kyisaiah47](https://github.com/kyisaiah47)). [LICENSE](LICENSE) · [PRIVACY.md](PRIVACY.md)

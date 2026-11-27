@@ -1,6 +1,6 @@
 # Privacy and data handling
 
-Applies to the permission-slips package published by Compound Labs. Updated November 26, 2026.
+Applies to the permission-slips package published by Isaiah Kim. Updated November 26, 2026.
 
 ## Package behavior
 

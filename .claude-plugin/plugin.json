@@ -3,10 +3,10 @@
   "displayName": "Permission Slips",
   "version": "0.1.0",
   "description": "Scoped, expiring grants for risky agent actions. Only a prompt you type issues one, and a hook outside the model checks it.",
-  "author": { "name": "Compound Labs", "url": "https://github.com/kyisaiah47" },
+  "author": { "name": "Isaiah Kim", "url": "https://github.com/kyisaiah47" },
   "homepage": "https://github.com/kyisaiah47/permission-slips",
   "repository": "https://github.com/kyisaiah47/permission-slips",
-  "license": "LicenseRef-Compound-Labs-Skills",
+  "license": "LicenseRef-Isaiah-Kim-Skills",
   "keywords": ["hooks", "permissions", "claude-code", "codex", "safety"],
   "hooks": "./hooks/hooks.json",
   "skills": "./skills/"
