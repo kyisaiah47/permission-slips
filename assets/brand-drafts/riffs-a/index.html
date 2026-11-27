@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Permission Slips: stub riffs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0}
+  body{font-family:"IBM Plex Sans",system-ui,sans-serif;background:#efeadf;color:#14213d;padding:48px}
+  header{margin-bottom:36px}
+  header h1{font-family:"JetBrains Mono";font-size:26px}
+  header p{color:#4a5368;margin-top:6px}
+  section{border:1px solid #d8d0bd;border-radius:18px;padding:28px;margin-bottom:32px;background:#fbf8f1}
+  section h2{font-family:"JetBrains Mono";font-size:19px}
+  .idea{color:#4a5368;margin:6px 0 20px}
+  .row{display:grid;grid-template-columns:220px 150px 1fr;gap:20px;align-items:stretch}
+  .big img{width:220px;height:220px;border-radius:14px;border:1px solid #e3dccb;display:block;object-fit:cover}
+  .small{display:flex;flex-direction:column;justify-content:center;gap:14px;border:1px solid #e3dccb;border-radius:14px;padding:16px;background:#fff}
+  .small div{display:flex;align-items:center;gap:10px;font-size:12px;color:#6b7385}
+  .small img{border-radius:4px;display:block}
+  .tab{background:#dee1e6;border-radius:8px 8px 0 0;padding:6px 10px;display:flex;align-items:center;gap:8px;font-size:12px;color:#333}
+  .lockup{border-radius:14px;background:#f3ecdc;display:flex;align-items:center;gap:20px;padding:24px 30px;border:1px solid #e3dccb}
+  .lockup img{width:96px;height:96px;object-fit:cover;border-radius:18px}
+  .lockup .t{font-family:"JetBrains Mono";font-weight:700;font-size:40px;letter-spacing:-.02em;line-height:1.05}
+  .lockup .tag{font-family:"IBM Plex Sans";font-weight:400;font-size:16px;margin-top:8px;letter-spacing:0;opacity:.8}
+  .card{margin-top:20px;aspect-ratio:1200/630;border-radius:14px;overflow:hidden;position:relative;display:flex;align-items:center;padding:6%;gap:5%}
+  .card .t{font-family:"JetBrains Mono";font-weight:700;font-size:clamp(22px,3.6vw,50px);line-height:1.1}
+  .card .s{font-family:"IBM Plex Sans";font-size:.42em;font-weight:400;display:block;margin-top:.7em;opacity:.85}
+  .card .m{width:24%;aspect-ratio:1;border-radius:22%;object-fit:cover;flex:none}
+  .card.photo{background:#14213d url(../a-theme.png) center/cover;color:#f3ecdc}
+  .card.navy{background:#14213d;color:#f3ecdc}
+  .card.cream{background:#f3ecdc;color:#14213d}
+  .card .label{position:absolute;left:6%;bottom:6%;font-size:13px;opacity:.6;font-family:"IBM Plex Sans"}
+</style>
+</head>
+<body>
+<header>
+  <h1>Permission Slips: direction A riffs</h1>
+  <p>Six ticket-stub variations show the mark large, at 64/32/16 px, in a browser tab, as a lockup, and on a 1200x630 share card.</p>
+</header>
+<main id="m"></main>
+<script>
+const R=[
+ ["r1-check","A1. Outline stub, check","The original idea, drawn as a single-colour outline.","cream","/slip deploy api","An agent can't sign its own permission slip."],
+ ["r2-slash","A2. Slash-command stub","A slash glyph replaces the check, so the stub reads as a typed command.","navy","/slip deploy api","Only a prompt the human types can issue a slip."],
+ ["r3-punched","A3. Punched stub","One hole punched through the stub: the slip was good for one trip and that trip is used.","photo","Good for one trip.","Signed by the human. Names the trip. Checked at the door."],
+ ["r4-torn","A4. Torn stub","The stub torn off the slip at the perforation, which is how the door check works.","navy","Checked at the door.","A hook outside the model checks the slip before a risky tool call."],
+ ["r5-admit","A5. Admit-one","A cinema-ticket outline with a red check, the most familiar ticket shape.","cream","sudo for coding agents","An agent can't sign its own permission slip."],
+ ["r6-favicon","A6. Favicon silhouette","The stub cut down to notches and three dots so it holds at 16 px.","photo","/slip deploy api","sudo for coding agents"]
+];
+document.getElementById('m').innerHTML=R.map(([f,h,idea,bg,t,s])=>`
+<section>
+ <h2>${h}</h2><p class="idea">${idea}</p>
+ <div class="row">
+  <div class="big"><img src="${f}.png" alt=""></div>
+  <div class="small">
+   <div><img src="${f}.png" width="64" height="64" alt="">64</div>
+   <div><img src="${f}.png" width="32" height="32" alt="">32</div>
+   <div><img src="${f}.png" width="16" height="16" alt="">16</div>
+   <div class="tab"><img src="${f}.png" width="16" height="16" alt="">permission-slips</div>
+  </div>
+  <div class="lockup"><img src="${f}.png" alt=""><div class="t">permission-slips<div class="tag">sudo for coding agents</div></div></div>
+ </div>
+ <div class="card ${bg}"><img class="m" src="${f}.png" alt=""><div class="t">${t}<span class="s">${s}</span></div></div>
+</section>`).join('');
+</script>
+</body>
+</html>
