@@ -3,5 +3,5 @@
 <g transform="translate(90 165) scale(0.3) translate(-127 -127)"><path d="M150 397H1104V539A88 88 0 0 0 1104 715V857H150V715A88 88 0 0 0 150 539Z" fill="#14213d"/><g fill="#f3ecdc"><circle cx="453" cy="422.0" r="13"/><circle cx="453" cy="472.8" r="13"/><circle cx="453" cy="523.5" r="13"/><circle cx="453" cy="574.2" r="13"/><circle cx="453" cy="625.0" r="13"/><circle cx="453" cy="675.8" r="13"/><circle cx="453" cy="726.5" r="13"/><circle cx="453" cy="777.2" r="13"/><circle cx="453" cy="828.0" r="13"/></g><path d="M622 634L661 597L727 664L880 490L917 526L728 746Z" fill="#f3ecdc"/></g>
 <text x="440" y="270" font-family="Menlo,monospace" font-size="62" font-weight="700" fill="#14213d">permission-slips</text>
 <text x="442" y="330" font-family="Menlo,monospace" font-size="30" fill="#14213d" opacity=".8">sudo for coding agents</text>
-<text x="442" y="420" font-family="Helvetica,Arial,sans-serif" font-size="30" fill="#14213d">An agent can't sign its own permission slip.</text>
+<text x="442" y="384" font-family="Instrument Serif" font-style="italic" font-size="38" fill="#14213d">An agent can't sign its own permission slip.</text>
 </svg>
